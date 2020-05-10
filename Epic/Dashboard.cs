@@ -16,5 +16,10 @@ namespace Epic
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VirtualMouse.LeftClick(int.Parse(txtX.Text), int.Parse(txtY.Text));
+        }
     }
 }
